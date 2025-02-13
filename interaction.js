@@ -139,3 +139,5 @@ const contractinteraction=async()=>{
 }
 
 contractinteraction();
+
+// now everthing working fine and foof
