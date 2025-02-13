@@ -120,21 +120,21 @@ const contractwrite=async()=>{
 const contractinteraction=async()=>{
    const walletcontract=new ethers.Contract(walletaddres,walletabi,provider);
 
-   const contractname=await walletcontract.name();
-   console.log("contract name ",contractname);
+  //  const contractname=await walletcontract.name();
+  //  console.log("contract name ",contractname);
 
-   const contractval=await walletcontract.retrivevalue();
-   console.log("contract val ",contractval);
+  //  const contractval=await walletcontract.retrivevalue();
+  //  console.log("contract val ",contractval);
    
 
-  //  const contractbalance=await walletcontract.contractbalance();
-  //  console.log("contractbalance  ",contractbalance);
+   const contractbalance=await walletcontract.contractbalance();
+   console.log("contractbalance  ", ethers.formatEther(contractbalance));
 
-  //  const accountbalance=await walletcontract.accountbalance("0x39a8338d1663690b05e8b574b61c8852d8c4e1f4");
+   const accountbalance=await walletcontract.accountbalance("0x39a8338d1663690b05e8b574b61c8852d8c4e1f4");
  
-  //  const accountbalanceinEth=ethers.formatEther(accountbalance);
+   const accountbalanceinEth=ethers.formatEther(accountbalance);
    
-  //  console.log("accountbalance  ",accountbalanceinEth);
+   console.log("accountbalance  ",accountbalanceinEth);
 
 }
 
