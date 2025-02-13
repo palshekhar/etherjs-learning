@@ -9,6 +9,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "ethers": "^6.13.5"
+    "create-react-app": "^5.0.1",
+    "ethers": "^6.13.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
